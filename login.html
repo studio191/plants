@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		body{
+			display: grid;
+			grid-template-columns: 100%;
+			place-items: center; /* выравнивание по центру по вертикали и по горизонтали*/
+			min-height: 100vh;
+			background: #0c1813;
+			margin: 0px;
+		}
+
+		input[type="text"], input[type="password"]{
+			margin-bottom: 30px;
+			border: none;
+			border-bottom: 1px solid black;
+			width: 100%;
+		}
+
+		input[type="checkbox"]{
+			margin-bottom: 30px;
+		}
+
+		input[type="submit"]{
+			background: #355ed4;
+    		padding: 10px;
+    		color: white;
+    		border: none;
+			width: 100%;
+		}
+
+		.container{
+			margin: auto;
+			width: 40%;
+			display: grid;
+			grid-template-columns: 50% 50%;
+		}
+
+		.image{
+			background: url(login.jpg);
+			background-size: cover;
+		}
+
+		.form{
+			padding: 50px;
+			background: white;
+		}
+
+		.form h2{
+			text-align: center;
+			margin-top: 0px;
+		}
+
+		.login-link{
+			padding-top: 15px;
+			text-align: center;
+		}
+
+		.login-link a{
+			color: #355ed4;
+			text-decoration: none;
+		}
+
+		.login-link a:hover{
+			text-decoration: underline;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="image">
+		</div>
+		<div class="form">
+			<h2>Авторизация</h2>
+			<form action="">
+				<div>
+					<input type="text" placeholder="Логин">
+				</div>
+				<div>
+					<input type="password" placeholder="Пароль">
+				</div>
+				<div>
+					<input type="submit" value="Войти">
+				</div>
+				<div class="login-link">
+					<a href="registration.html">
+						Не были раньше?
+					</a>					
+				</div>
+			</form>	
+		</div>		
+	</div>
+</body>
+</html>
