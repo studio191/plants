@@ -39,11 +39,18 @@
 			width: 40%;
 			display: grid;
 			grid-template-columns: 50% 50%;
+			@media((min-width: 0px) and (max-width: 992px)) {
+				grid-template-columns: 100%;
+				width: 80%;
+			}
 		}
 
 		.image{
 			background: url(login.jpg);
 			background-size: cover;
+			@media((min-width: 0px) and (max-width: 786px)){
+				display: none;
+			}
 		}
 
 		.form{
@@ -91,6 +98,11 @@
 				<div class="login-link">
 					<a href="registration.html">
 						Не были раньше?
+					</a>					
+				</div>
+				<div class="login-link">
+					<a href="index8.html">
+						На главную
 					</a>					
 				</div>
 			</form>	
